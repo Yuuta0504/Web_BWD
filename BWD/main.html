@@ -13,7 +13,7 @@
         <!-- Header Top -->
         <div class="header-top">
             <div class="logo">
-                <img src="/BWD/Images/z6507059749892_1d2c5e0bf898c608925691d78925f84d.jpg" alt="" width="100px" height="100px">
+                <img src="/BWD/Images/z6507059749892_1d2c5e0bf898c608925691d78925f84d.jpg" alt="" width="100%" height="100%">
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Tìm kiếm dự án...">
@@ -31,60 +31,75 @@
         <nav class="submenu">
             <a href="#">🏠 Trang chủ</a>
             <a href="#">🤝 Gây quỹ</a>
-            <a href="#">🆕 Có gì mới</a>
             <a href="#">📊 Thống kê</a>
-            <a href="#">🙋 Tình nguyện</a>
-            <a href="#">📞 Hỗ trợ</a>
             <a href="#">📁 Dự án</a>
-            <a href="#">🏢 Tổ chức</a>
             <a href="#">ℹ️ Về chúng tôi</a>
+            <a href="#">📞 Hỗ trợ</a>
             <a href="#">✍️ Blog / Tin tức</a>
-            <a href="#">🎯 Mục tiêu</a>
           </nav>
     </div>
     <div class="container2">
-        <h2>Giới Thiệu Về Hệ Thống Gây Quỹ</h2>
-        <p>
-        <strong>Hearts United</strong> là nền tảng gây quỹ từ thiện nhằm kết nối cộng đồng với những hoàn cảnh khó khăn. 
-        Chúng tôi mang đến một hệ thống minh bạch, tiện lợi và đầy cảm hứng để mọi người có thể chung tay giúp đỡ lẫn nhau.
-        </p>
-        <div class="content3">
-            <!-- QUY MÔ GÂY QUỸ -->
+        <div class="slider">
+            <div class="slides">
+                <!--GIỚI THIỆU HỆ THỐNG-->
+                <!--Slide 1-->
+                <div class="slide active">
+                    <img src="/BWD/Images/pexels-suraphat-933624.jpg" alt="" width="100%" class="slide-img" >
+                    <div class="hero-text">
+                        <h1>Giới Thiệu Về Hệ Thống Gây Quỹ</h1>
+                        <p>
+                        <strong>Hearts United</strong> là nền tảng gây quỹ từ thiện nhằm kết nối cộng đồng với những hoàn cảnh khó khăn. 
+                        Chúng tôi mang đến một hệ thống minh bạch, tiện lợi và đầy cảm hứng để mọi người có thể chung tay giúp đỡ lẫn nhau.
+                        </p>
+                    </div>
+                </div>
+                <!-- QUY MÔ GÂY QUỸ -->
+                <!--Slide 2-->
+                <div class="slide">
+                    <img src="/BWD/Images/istockphoto-1486910056-1024x1024.jpg" alt="" class="slide-img">
+                    <div class="hero-text">
+                        <h2>Quy Mô Gây Quỹ</h2>
+                        <p>
+                                Từ những chiến dịch nhỏ hỗ trợ cá nhân, đến các dự án cộng đồng quy mô lớn – nền tảng của chúng tôi hỗ trợ đa dạng hình thức đóng góp: 
+                                tiền mặt, nhu yếu phẩm, đồ dùng học tập, y tế...
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- NGƯỜI CẦN HỖ TRỢ -->
+                <!--Slide 3-->
+                <div class="slide">
+                    <img src="/BWD//Images/pexels-rdne-6646918.jpg" alt="" class="slide-img">
+                    <div class="hero-text">
+                        <h2>Người Cần Hỗ Trợ</h2>
+                        <p>
+                            Người nghèo, trẻ em cơ nhỡ, bệnh nhân khó khăn, học sinh vùng cao, người khuyết tật – là những đối tượng mà hệ thống hướng đến. 
+                            Mỗi chiến dịch đều được xác minh rõ ràng để đảm bảo tính minh bạch.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--THANH ĐIỀU HƯỚNG-->
+            <ul class="nav-dots">
+                <li class="dot active" onclick="showSlide(0)"></li>
+                <li class="dot " onclick="showSlide(1)"></li>
+                <li class="dot " onclick="showSlide(2)"></li>
+            </ul>
+        </div>
+        <!-- FAQ -->
         <div class="section">
-            <div class="content3">
-              <h2>Quy Mô Gây Quỹ</h2>
-              <p>
-                Từ những chiến dịch nhỏ hỗ trợ cá nhân, đến các dự án cộng đồng quy mô lớn – nền tảng của chúng tôi hỗ trợ đa dạng hình thức đóng góp: 
-                tiền mặt, nhu yếu phẩm, đồ dùng học tập, y tế...
-              </p>
-            </div>
-          </div>
-          
-          <!-- NGƯỜI CẦN HỖ TRỢ -->
-          <div class="section">
-            <div class="content4">
-              <h2>Người Cần Hỗ Trợ</h2>
-              <p>
-                Người nghèo, trẻ em cơ nhỡ, bệnh nhân khó khăn, học sinh vùng cao, người khuyết tật – là những đối tượng mà hệ thống hướng đến. 
-                Mỗi chiến dịch đều được xác minh rõ ràng để đảm bảo tính minh bạch.
-              </p>
-            </div>
-          </div>
-          
-          <!-- FAQ -->
-          <div class="section">
             <div class="content5">
-              <h2>Câu Hỏi Thường Gặp</h2>
-              <ul>
-                <li><strong>Làm sao để tạo chiến dịch gây quỹ?</strong> → Đăng ký tài khoản và nhấn vào mục “Tạo chiến dịch”.</li>
-                <li><strong>Tiền đóng góp sẽ được quản lý như thế nào?</strong> → Tất cả chiến dịch đều có thống kê công khai minh bạch.</li>
-                <li><strong>Làm sao để theo dõi tiến trình?</strong> → Bạn có thể xem cập nhật theo thời gian thực tại trang dự án.</li>
-              </ul>
+                <h2>Câu Hỏi Thường Gặp</h2>
+                <ul>
+                    <li><strong>Làm sao để tạo chiến dịch gây quỹ?</strong> → Đăng ký tài khoản và nhấn vào mục “Tạo chiến dịch”.</li>
+                    <li><strong>Tiền đóng góp sẽ được quản lý như thế nào?</strong> → Tất cả chiến dịch đều có thống kê công khai minh bạch.</li>
+                    <li><strong>Làm sao để theo dõi tiến trình?</strong> → Bạn có thể xem cập nhật theo thời gian thực tại trang dự án.</li>
+                </ul>
             </div>
-          </div>
+        </div>
           
-          <!-- MẠNG XÃ HỘI -->
-          <div class="section">
+        <!-- MẠNG XÃ HỘI -->
+        <div class="section">
             <div class="content6">
               <h2>Kết Nối Mạng Xã Hội & Lời Cảm Ơn</h2>
               <p>
@@ -99,10 +114,10 @@
                 ❤️ Cảm ơn bạn đã đồng hành cùng <strong>Hearts United</strong>! Mỗi lượt chia sẻ là một cơ hội thay đổi cuộc đời một ai đó.
               </p>
             </div>
-          </div>
+        </div>
           
-          <!-- HƯỚNG DẪN GÂY QUỸ -->
-          <div class="section">
+        <!-- HƯỚNG DẪN GÂY QUỸ -->
+        <div class="section">
             <div class="content7">
               <h2>Hướng Dẫn Tạo Bài Viết Gây Quỹ</h2>
               <p>
@@ -113,7 +128,8 @@
                 📈 <strong>Bước 5:</strong> Cập nhật tiến trình thường xuyên để tạo niềm tin cho cộng đồng.
               </p>
             </div>
-          </div>
+         </div>
     </div>
+    <script src="slider.js"></script>
 </body>
 </html>
