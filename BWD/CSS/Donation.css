@@ -194,3 +194,9 @@ button:hover{
     padding: 0 20px;
     font-size: 30px;
 }
+.logo img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 50%;
+}
