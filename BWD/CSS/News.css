@@ -36,6 +36,12 @@ body {
     overflow: hidden;
     background-color: white;
 }
+.logo img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 50%;
+}
 
 .search-container input {
     border: none;

@@ -153,7 +153,7 @@ h1, h2{
 body{
     background: #eae7d6;
 }
-span{
+.paddingChild span{
     color: red;
 }
 p, td{
