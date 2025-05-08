@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to left, #EAE7D6, #d7f9fa);
+    background-color: white;
 }
 
   /* Header Top */
@@ -17,7 +17,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 3px 5px;
-    background-color: #EAE7D6;
+    background-color: white;
     border-bottom: 2px solid #ccc;
 }
 
@@ -118,9 +118,12 @@ body {
 }
 .container2 {
     margin: 30px 0px;
-    padding: 15px 0px;
     width: 100%;
     height: 100vh;
+    box-shadow:#333 0px 0px 10px 0px;
+    display: flex;
+    background-image: url('/BWD/Images/DeWatermark.ai_1745324339366.png'); 
+    background-size: cover;
 }
 .project-description {
     position: relative;
@@ -167,3 +170,67 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
+.btn-ungho{
+    background-color: #00B388;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float:right
+}
+.wpneo-tabs-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #e0f7fa; /* pastel xanh nhạt */
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wpneo-tabs-menu li {
+    margin: 0;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    font-weight: 500;
+    color: #00796b;
+    border-bottom: 3px solid transparent;
+}
+
+.wpneo-tabs-menu li:hover {
+    background: #b2dfdb;
+}
+
+.wpneo-tabs-menu li.wpneo-current {
+    background: #ffffff;
+    border-bottom: 3px solid #00796b;
+    color: #004d40;
+    font-weight: 600;
+}
+
+.tab-content {
+    display: none;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
