@@ -18,7 +18,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 3px 5px;
-    background-color: #EAE7D6;
+    background: #fcfcfc;
+    background: linear-gradient(90deg, rgba(252, 252, 252, 1) 37%, rgba(77, 214, 175, 1) 100%);
     border-bottom: 2px solid #ccc;
 }
 

@@ -20,13 +20,20 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 3px 5px;
-    background-color: #EAE7D6;
+    background: #fcfcfc;
+    background: linear-gradient(90deg, rgba(252, 252, 252, 1) 37%, rgba(77, 214, 175, 1) 100%);
     border-bottom: 2px solid #ccc;
 }
 
 .logo {
     font-weight: bold;
     width: 100px;
+}
+.logo img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 50%;
 }
 
 .search-container {
@@ -123,43 +130,8 @@ body {
     margin: 30px 0px;
     padding: 15px 0px;
     width: 100%;
-    height: 100vh;
-}
-.paddingBox{
+    height: 120vh;
     display: flex;
-    padding: 2em;
-    width: 100%;
-}
-.paddingChild{
-    padding-top: 1.5em;
-    padding-bottom: 5em;
-    padding-left: 4em;
-
-}
-.thongtincanhan {
-    padding-top: 1.5em;
-    padding-bottom: 5em;
-    padding-left: 4em;
-
-}
-.paddingChild h2 {
-    text-align: left;
-}
-.childLayout{
-    margin: 20px auto;
-    padding: 20px;
-    width: 70%;
-    height: 1000px;
-    backdrop-filter: blur(20px) saturate(156%);
-    -webkit-backdrop-filter: blur(20px) saturate(156%);
-    background-color: rgba(17, 25, 40, 0.44);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
-.childLayout h1 {
-    padding: 1em;
-    font-size: 40px;
-    text-align:  center;
 }
 
 img#helpingImg {
@@ -168,38 +140,7 @@ img#helpingImg {
     filter: brightness(60%);
     object-fit: cover;
 }
-h1, h2{
-    color: #5d7b6f;
-}
 
-.paddingChild span{
-    color: red;
-}
-p, td{
-    font-size: larger;
-}
-input{
-    width: 35em;
-    height: 2em;
-    border: 2px solid black;
-    border-radius: 5%;
-}
-.message{
-    width: 935px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 2%;
-}
-button{
-    width: 110px;
-    height: 40px;
-    background: white;
-    border-radius: 12px ;
-}
-button:hover{
-    background: #5d7b6f;
-    color: white;
-}
 .hero-text2 {
     position: absolute;
     top: 50%;
@@ -209,4 +150,111 @@ button:hover{
     text-align: center;
     padding: 0 20px;
     font-size: 24px;
+}
+.QuyenGop {
+    width: 75%;
+}
+.ThongKe {
+    width: 25%;
+    border-left: 2px solid black;
+}
+.pageGrid{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    flex-direction: column;
+}
+.pageItem{
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 50px;
+    align-items: center;
+    margin: 0px 15%;
+}
+
+.FormDongGop {
+    color: rgb(0, 0, 0);
+    width: 60%;
+    padding: 20px;
+    line-height: 1.8;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, rgba(0, 90, 84, 0.31), rgba(0, 89, 12, 0.1));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 255, 204, 0.1);
+    margin: 30px auto;
+    animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.FormDongGop h1 {
+    text-align: center;
+    padding: 10px 0px ;
+}
+.FormDongGop label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.FormDongGop input[type="text"],
+.FormDongGop input[type="email"],
+.FormDongGop input[type="number"],
+.FormDongGop input[type="tel"],
+.FormDongGop select,
+.FormDongGop textarea {
+    width: 84%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.FormDongGop input:focus,
+.FormDongGop select:focus,
+.FormDongGop textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #fff;
+}
+
+.FormDongGop textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.FormDongGop button[type="submit"] {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.FormDongGop button[type="submit"]:hover {
+    background-color: #45a049;
 }
