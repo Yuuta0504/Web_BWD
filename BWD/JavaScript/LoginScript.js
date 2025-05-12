@@ -9,3 +9,13 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove('active');
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('action') === 'register') {
+        container.classList.add('active');
+    }
+    else if (action === 'login') {
+        container.classList.remove('active');
+    }
+});
