@@ -6,7 +6,6 @@
     <title>donate Page</title>
     <link rel="stylesheet" href="/BWD/CSS/Donation.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="light.js" defer></script>
 </head>
 <body>
     <div class="container1">
@@ -60,6 +59,7 @@
         </nav>
     </div>
     <div class="container2">
+        <div class="title">
             <img src="/BWD/Images/ruralChildren.jpg" alt="Helping other" id="helpingImg">
             <div class="hero-text2">
                 <p>
@@ -69,92 +69,94 @@
             </div>
         </div>
         <div class="paddingBox">
-        <div class="childLayout">
-            <h1>--- Donate Information ---</h1>
-            <div class="paddingChild">
-                <h2><i>I. Thông tin cá nhân</i></h2>
-                <p>
-                    Họ và tên<span>*</span><br>
-                    <td><input type="text" placeholder="Vd: Nguyễn Văn A,..."></td>
-                </p>
-                <p>
-                    Địa chỉ<span>*</span><br>
-                    <input type="text" placeholder="Vd: số nhà, tổ 123, đường ABC, phường XYZ,...">
-                </p>
-                <table>
-                    <tr>
-                        <td>Email<span>*</span></td>
-                        <td>SĐT<span>*</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Vd: abcxyz123@.gmail.com"></td>
-                        <td><input type="text" placeholder="(08+) XXX-XXX-XXXX"></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="paddingChild">
-                <h2><i>II. Quyên góp</i></h2>
-                <table>
-                    <tr>
-                        <td>Ủng hộ (VND): <span>*</span></td>
-                    </tr>
-                    <tr>
-                        <td><button>50.000</button></td>
-                        <td><button>100.000</button></td>
-                        <td><button>200.000</button></td>
-                        <td><button>500.000</button></td>
-                        <td><button>800.000</button></td>
-                        <td><button>1.000.000</button></td>
-                    </tr>
-                    <tr>
-                        <td colspan="6"> 
-                            Khác:
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="6">  
-                            <input type="text"placeholder="(Nhập số tiền cụ thể)">
-                            <button>VNĐ</button></td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="6">Thông điệp:</td>
-                    </tr>
-                    <tr>
-                        <td colspan="6">
-                            <textarea class="message" name="message" placeholder="..."></textarea>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="paddingChild">
-                <h2><i>III. Thanh toán</i></h2>
-                <h3><p><i><span>*</span>Các bước hướng dẫn thanh toán:</i><br></p></h3>
-                <table>
-                    <tr>
-                        <td>
-                            <p>
-                            <u><b>Bước 1</b></u>: Nhập số TK: ABCDEFGHJK... <br>
-                            hoặc thanh toán qua mã QR dưới đây:
-                            </p>
-                            <p>
-                            <u><b> Bước 2:</b></u> Nội dung CK: <br>
-                                "ABCDEFGHJKLMN..."
-                            </p>
-                            <p>
-                                <u><b>Bước 3:</b></u> Click vào nút 'DONATE'! bên dưới <br>
-                            </p>
-                        </td>
-                        </td>
-                        <td rowspan="3">
-                            <div style="padding: auto; padding-left: 50%;">
-                                <img src="/BWD/Images/Donate QR_qrcode.png" alt="QR_qrcode" width="300px;" height="300px;">
-                            </div>
-                        </td>
-                </table>
+            <div class="childLayout">
+                <h1>--- Donate Information ---</h1>
+                <div class="thongtincanhan">
+                    <h2><i>I. Thông tin cá nhân</i></h2>
+                    <p>
+                        Họ và tên<span>*</span><br>
+                        <td><input type="text" placeholder="Vd: Nguyễn Văn A,..."></td>
+                    </p>
+                    <p>
+                        Địa chỉ<span>*</span><br>
+                        <input type="text" placeholder="Vd: số nhà, tổ 123, đường ABC, phường XYZ,...">
+                    </p>
+                    <table>
+                        <tr>
+                            <td>Email<span>*</span></td>
+                            <td>SĐT<span>*</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Vd: abcxyz123@.gmail.com"></td>
+                            <td><input type="text" placeholder="(08+) XXX-XXX-XXXX"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paddingChild">
+                    <h2><i>II. Quyên góp</i></h2>
+                    <table>
+                        <tr>
+                            <td>Ủng hộ (VND): <span>*</span></td>
+                        </tr>
+                        <tr>
+                            <td><button>50.000</button></td>
+                            <td><button>100.000</button></td>
+                            <td><button>200.000</button></td>
+                            <td><button>500.000</button></td>
+                            <td><button>800.000</button></td>
+                            <td><button>1.000.000</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"> 
+                                Khác:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">  
+                                <input type="text"placeholder="(Nhập số tiền cụ thể)">
+                                <button>VNĐ</button></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">Thông điệp:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <textarea class="message" name="message" placeholder="..."></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paddingChild">
+                    <h2><i>III. Thanh toán</i></h2>
+                    <h3><p><i><span>*</span>Các bước hướng dẫn thanh toán:</i><br></p></h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                <u><b>Bước 1</b></u>: Nhập số TK: ABCDEFGHJK... <br>
+                                hoặc thanh toán qua mã QR dưới đây:
+                                </p>
+                                <p>
+                                <u><b> Bước 2:</b></u> Nội dung CK: <br>
+                                    "ABCDEFGHJKLMN..."
+                                </p>
+                                <p>
+                                    <u><b>Bước 3:</b></u> Click vào nút 'DONATE'! bên dưới <br>
+                                </p>
+                            </td>
+                            </td>
+                            <td rowspan="3">
+                                <div style="padding: auto; padding-left: 50%;">
+                                    <img src="/BWD/Images/Donate QR_qrcode.png" alt="QR_qrcode" width="300px;" height="300px;">
+                                </div>
+                            </td>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
+        
 
     <script src="/BWD/JavaScript/light.js" defer></script>
     <script src="/BWD/JavaScript/slider.js"></script>
