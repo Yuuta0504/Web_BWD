@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         <!-- Header Top -->
         <div class="header-top">
             <div class="logo">
-                <img src="/BWD/Images/z6507059749892_1d2c5e0bf898c608925691d78925f84d.jpg" alt="" width="100%" height="100%">
+                <a href="/BWD/HTML/main.html"><img src="/BWD/Images/tải xuống.png" alt="Logo" width="100%" height="100%"></a> 
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Tìm kiếm dự án...">
@@ -22,7 +22,6 @@
                 🌓
             </div>
             <div class="auth-buttons">
-                <button class="signup">Tạo tài khoản</button>
                 <button class="login"><a href="/BWD/HTML/Login.html" style="text-decoration: none; color: black;">Đăng nhập</a></button>
             </div>
         </div>
@@ -34,11 +33,7 @@
             </a>
             <a href="/BWD/HTML/Donation.html" class="submenu-item">
                 <lord-icon src="https://cdn.lordicon.com/xyboiuok.json" trigger="morph" state="morph-heart" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
-                <span>Gây quỹ</span>
-            </a>
-            <a href="/BWD/HTML/ThongKe.html" class="submenu-item">
-                <lord-icon src="https://cdn.lordicon.com/pqirzoux.json" trigger="morph" state="morph-pie-chart" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
-                <span>Thống kê</span>
+                <span>Đóng góp</span>
             </a>
             <a href="/BWD/HTML/Project.html" class="submenu-item">
                 <lord-icon src="https://cdn.lordicon.com/jkzgajyr.json" trigger="morph" state="morph-folder" colors="primary:#a4c3a2" style="width:30px;height:30px"> </lord-icon>
@@ -48,10 +43,6 @@
                 <lord-icon src="https://cdn.lordicon.com/kthelypq.json" trigger="hover" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
                 <span>Về chúng tôi</span>
             </a>
-            <a href="/BWD/HTML/CallForHelp.html" class="submenu-item">
-                <lord-icon src="https://cdn.lordicon.com/srsgifqc.json" trigger="hover" colors="primary:#a4c3a2" style="width:30px;height:30px;"></lord-icon>
-                <span>Hỗ trợ</span>
-            </a>
             <a href="/BWD/HTML/News.html" class="submenu-item">
                 <lord-icon src="https://cdn.lordicon.com/lyrrgrsl.json" trigger="hover" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
                 <span>Blog</span>
@@ -59,108 +50,74 @@
         </nav>
     </div>
     <div class="container2">
-        <div class="title">
-            <img src="/BWD/Images/ruralChildren.jpg" alt="Helping other" id="helpingImg">
-            <div class="hero-text2">
-                <p>
-                <strong>OUR HOPE</strong> <br>
-                "We have no enemies. Everyone deserves worthy love, peace, and happiness."
-                </p>
+        <div class="QuyenGop">
+            <div class="FormDongGop">
+                <h1>Đơn Đóng Góp vào Quỹ</h1>
+                <form action="">
+                    <label>Họ và tên *</label>
+                    <input type="text" name="fullname" required>
+                    <br>
+                    <label>Email *</label>
+                    <input type="email" name="email" required>
+                    <br>
+                    <label>Số điện thoại</label>
+                    <input type="tel" name="phone">
+                    <br>
+                    <label>Số tiền muốn ủng hộ *</label>
+                    <select name="amount" required>
+                        <option value="">-- Chọn số tiền --</option>
+                        <option value="50000">50.000 VND</option>
+                        <option value="100000">100.000 VND</option>
+                        <option value="200000">200.000 VND</option>
+                        <option value="custom">Khác</option>
+                    </select>
+
+                    <input type="number" name="customAmount" placeholder="Nhập số tiền cụ thể (nếu chọn 'Khác')">
+                    <label>Phương thức thanh toán *</label>
+                    <select name="paymentMethod" required>
+                        <option value="bank">Chuyển khoản ngân hàng</option>
+                        <option value="qr">Quét mã QR</option>
+                        <option value="momo">Ví MoMo</option>
+                    </select>
+                    <br>
+                    <label>Thông điệp</label>
+                    <textarea name="message" placeholder="Gửi lời chúc hoặc ghi chú..."></textarea>
+                    <br>
+                    <button type="submit">DONATE</button>
+
+                </form>
             </div>
         </div>
-        <div class="paddingBox">
-            <div class="childLayout">
-                <h1>--- Donate Information ---</h1>
-                <div class="thongtincanhan">
-                    <h2><i>I. Thông tin cá nhân</i></h2>
-                    <p>
-                        Họ và tên<span>*</span><br>
-                        <td><input type="text" placeholder="Vd: Nguyễn Văn A,..."></td>
-                    </p>
-                    <p>
-                        Địa chỉ<span>*</span><br>
-                        <input type="text" placeholder="Vd: số nhà, tổ 123, đường ABC, phường XYZ,...">
-                    </p>
-                    <table>
-                        <tr>
-                            <td>Email<span>*</span></td>
-                            <td>SĐT<span>*</span></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" placeholder="Vd: abcxyz123@.gmail.com"></td>
-                            <td><input type="text" placeholder="(08+) XXX-XXX-XXXX"></td>
-                        </tr>
-                    </table>
+        <div class="ThongKe">
+            <div class="pageGrid">
+                <div class="pageItem">
+                    <h1 id="counter1">0</h1>
+                    <p> Số chiến dịch & quỹ đang diễn ra</p>
                 </div>
-                <div class="paddingChild">
-                    <h2><i>II. Quyên góp</i></h2>
-                    <table>
-                        <tr>
-                            <td>Ủng hộ (VND): <span>*</span></td>
-                        </tr>
-                        <tr>
-                            <td><button>50.000</button></td>
-                            <td><button>100.000</button></td>
-                            <td><button>200.000</button></td>
-                            <td><button>500.000</button></td>
-                            <td><button>800.000</button></td>
-                            <td><button>1.000.000</button></td>
-                        </tr>
-                        <tr>
-                            <td colspan="6"> 
-                                Khác:
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">  
-                                <input type="text"placeholder="(Nhập số tiền cụ thể)">
-                                <button>VNĐ</button></td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">Thông điệp:</td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">
-                                <textarea class="message" name="message" placeholder="..."></textarea>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="pageItem">
+                    <h1 id="counter2">0</h1>
+                    <p>Số người được hỗ trợ</p>
                 </div>
-                <div class="paddingChild">
-                    <h2><i>III. Thanh toán</i></h2>
-                    <h3><p><i><span>*</span>Các bước hướng dẫn thanh toán:</i><br></p></h3>
-                    <table>
-                        <tr>
-                            <td>
-                                <p>
-                                <u><b>Bước 1</b></u>: Nhập số TK: ABCDEFGHJK... <br>
-                                hoặc thanh toán qua mã QR dưới đây:
-                                </p>
-                                <p>
-                                <u><b> Bước 2:</b></u> Nội dung CK: <br>
-                                    "ABCDEFGHJKLMN..."
-                                </p>
-                                <p>
-                                    <u><b>Bước 3:</b></u> Click vào nút 'DONATE'! bên dưới <br>
-                                </p>
-                            </td>
-                            </td>
-                            <td rowspan="3">
-                                <div style="padding: auto; padding-left: 50%;">
-                                    <img src="/BWD/Images/Donate QR_qrcode.png" alt="QR_qrcode" width="300px;" height="300px;">
-                                </div>
-                            </td>
-                    </table>
+                <div class="pageItem">
+                    <h1 id="counter3">0</h1>
+                    <p>Số lượng nhà hảo tâm</p>
+                </div>
+                <div class="pageItem">
+                    <h1 id="counter4">0</h1>
+                    <p>Số tiền đã quyên góp</p>
                 </div>
             </div>
         </div>
     </div>
-        
-
+    
     <script src="/BWD/JavaScript/light.js" defer></script>
     <script src="/BWD/JavaScript/slider.js"></script>
     <script src="/BWD/JavaScript/faq.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="/BWD/JavaScript/counter.js"></script>
+    <script>animateCounter('counter1',99,2000)</script>
+    <script>animateCounter('counter2',5000,.9)</script>
+    <script>animateCounter('counter3',1000,2000)</script>
+    <script>animateCounter('counter4',8790,0.9)</script>
 </body>
 </html>

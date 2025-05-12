@@ -5,6 +5,7 @@ function animateCounter(id, targetNumber, duration) {
     
     const timer = setInterval(() => {
       startNumber++;
+      startNumber++;
       element.textContent = startNumber;
       if (startNumber >= targetNumber) {
         clearInterval(timer);
