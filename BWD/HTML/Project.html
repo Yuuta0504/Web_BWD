@@ -79,13 +79,14 @@
         </div>
     </div>
     <ul class="wpneo-tabs-menu">
-        <li class="description_tab wpneo-current">
+        <li class="description_tab wpneo-current" data-tab="campaigns-running">
             <a class="campaigns-running" href="#campaigns-running">Dự án đang gây quỹ</a>
         </li>
-        <li class="campaigns-stopped">
+        <li class="campaigns-stopped" data-tab="campaigns-stopped">
             <a class="" href="#campaigns-stopped">Dự án đã kết thúc</a>
         </li>
     </ul>
+    
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const tabs = document.querySelectorAll(".wpneo-tabs-menu li");
@@ -259,8 +260,69 @@
 </div>
 </div>
 <div id="campaigns-stopped" class="tab-content">
-    <p>✅ Đây là danh sách các dự án đã hoàn tất gây quỹ...</p>
+   <!-- Project Cards -->
+<div class="container sizecard">
+    <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="/BWD/Images/project1.jpg" alt="Dự án 1" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Dự án 1: Hỗ trợ trẻ em nghèo</h5>
+                    <p class="card-text">Giúp đỡ những trẻ em có hoàn cảnh khó khăn trong cuộc sống.</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">15.000.000 VNĐ</div>
+                      </div>
+                    <p class="card-text">Mục Tiêu: 50.000.000 VNĐ</p>
+                    <a href="/BWD/HTML/Donation.html" class="btn btn-success btn-ungho1">Ủng hộ</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="/BWD/Images/project2.webp" alt="Dự án 2" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Dự án 2: Giúp đỡ vùng lũ miền Trung</h5>
+                    <p class="card-text">Chúng tôi kêu gọi sự giúp đỡ để hỗ trợ các gia đình bị ảnh hưởng bởi thiên tai tại miền Trung.</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 43%;" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">30.000.000 VNĐ</div>
+                      </div>
+                    <p class="card-text">Mục Tiêu: 70.000.000 VNĐ</p>
+                    <a href="/BWD/HTML/Donate.html?project=2" class="btn btn-success btn-ungho1" >Ủng hộ</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="/BWD/Images/project3.png" alt="Dự án 3" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Dự án 3: Chữa bệnh cho trẻ em</h5>
+                    <p class="card-text">Hỗ trợ kinh phí chữa bệnh cho các em nhỏ mắc bệnh hiểm nghèo.</p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">22.000.000 VNĐ</div>
+                      </div>
+                    <p class="card-text">Mục Tiêu: 45.000.000 VNĐ</p>                      
+                    <a href="/BWD/HTML/Donate.html?project=3" class="btn btn-success btn-ungho1">Ủng hộ</a>
+                </div>
+            </div>
+        </div>
+
 </div>
+</div>
+<script>
+    // Lắng nghe tất cả nút có class 'btn-ungho'
+    document.querySelectorAll('.btn-ungho1').forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn không chuyển trang
+            alert('Dự án đã kết thúc. Cảm ơn bạn đã quan tâm!');
+        });
+    });
+</script>
+
 </div>
 
         <!-- Footer -->
@@ -302,6 +364,7 @@
                 </div>
             </div>
         </div>
+        
 
     <script src="/BWD/JavaScript/tabproject.js"></script>
     <script src="/BWD/JavaScript/light.js" defer></script>
