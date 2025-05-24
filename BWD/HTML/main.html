@@ -27,7 +27,7 @@
         <!-- Submenu -->
         <nav class="submenu">
             <a href="/BWD/HTML/main.html" class="submenu-item">
-                <lord-icon src="https://cdn.lordicon.com/cnpvyndp.json" trigger="morph" state="morph-home-2" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
+                <lord-icon id="home-icon"src="https://cdn.lordicon.com/cnpvyndp.json" trigger="morph" state="morph-home-2" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
                 <span>Trang chủ</span>
             </a>
             <a href="/BWD/HTML/Donation.html" class="submenu-item">
@@ -99,9 +99,6 @@
         
         <!--Loi noi dau-->
         <div class="Mo_dau">
-            <div class="Modau_img">
-                <img src="/BWD/Images/cong-ty-co-duoc-thanh-lap-quy-tu-thien-khong_3108160435.webp" alt="thanh_lap_quy_tu_thien" width="100%" class="img_modau">
-            </div>
             <div class="Text_Mo_dau">
                 <h2>Give4Good là gì ?</h2> <br>
                 <p>Give4Good là một nền tảng gây quỹ cộng đồng trực tuyến với mục tiêu kết nối những tấm lòng nhân ái đến gần hơn với các hoàn cảnh khó khăn và dự án vì cộng đồng. Chúng tôi hướng tới sự tiện lợi, minh bạch và hiệu quả trong từng hoạt động gây quỹ. </p> <br>
@@ -175,6 +172,19 @@
               </p>
             </div>
         </div>
+    </div>
+    <script>
+        const item = document.querySelector('.submenu-item');
+        const icon = document.querySelector('#home-icon');
+      
+        item.addEventListener('mouseenter', () => {
+          icon.play();
+        });
+      
+        item.addEventListener('mouseleave', () => {
+          icon.stop();
+        });
+    </script>
     <script src="/BWD/JavaScript/slider.js"></script>
     <script src="/BWD/JavaScript/faq.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
