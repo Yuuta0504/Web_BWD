@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hearts United</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/BWD/CSS/style.css">
-    <link rel="icon" href="/BWD/Images/tải xuống.png">
+    <link rel="icon" href="/BWD/Images/Logo.png">
 </head>
 <body>
     <div class="container1">
         <!-- Header Top -->
         <div class="header-top">
             <div class="logo">
-               <a href="/BWD/HTML/main.html"><img src="/BWD/Images/tải xuống.png" alt="Logo" width="100%" height="100%"></a> 
+               <a href="/BWD/HTML/main.html"><img src="/BWD/Images/Logo.png" alt="Logo" width="100%" height="100%"></a> 
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Tìm kiếm dự án...">
-                <button>🔍</button>
-            </div>
-            <div class="dark-toggle">
-                🌓
+                <button><i class="bi bi-search"></i></button>
             </div>
             <div class="auth-buttons">
                 <button class="login"><a href="/BWD/HTML/Login.html" style="text-decoration: none; color: black;">Đăng nhập</a></button>
@@ -29,7 +28,7 @@
         <!-- Submenu -->
         <nav class="submenu">
             <a href="/BWD/HTML/main.html" class="submenu-item">
-                <lord-icon src="https://cdn.lordicon.com/cnpvyndp.json" trigger="morph" state="morph-home-2" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
+                <lord-icon id="home-icon"src="https://cdn.lordicon.com/cnpvyndp.json" trigger="morph" state="morph-home-2" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
                 <span>Trang chủ</span>
             </a>
             <a href="/BWD/HTML/Donation.html" class="submenu-item">
@@ -47,10 +46,6 @@
             <a href="/BWD/HTML/CallForHelp.html" class="submenu-item">
                 <lord-icon src="https://cdn.lordicon.com/srsgifqc.json" trigger="hover" colors="primary:#a4c3a2" style="width:30px;height:30px;"></lord-icon>
                 <span>Hỗ trợ</span>
-            </a>
-            <a href="/BWD/HTML/News.html" class="submenu-item">
-                <lord-icon src="https://cdn.lordicon.com/lyrrgrsl.json" trigger="hover" colors="primary:#a4c3a2" style="width:30px;height:30px"></lord-icon>
-                <span>Blog</span>
             </a>
         </nav>
     </div>
@@ -105,9 +100,6 @@
         
         <!--Loi noi dau-->
         <div class="Mo_dau">
-            <div class="Modau_img">
-                <img src="/BWD/Images/cong-ty-co-duoc-thanh-lap-quy-tu-thien-khong_3108160435.webp" alt="thanh_lap_quy_tu_thien" width="100%" class="img_modau">
-            </div>
             <div class="Text_Mo_dau">
                 <h2>Give4Good là gì ?</h2> <br>
                 <p>Give4Good là một nền tảng gây quỹ cộng đồng trực tuyến với mục tiêu kết nối những tấm lòng nhân ái đến gần hơn với các hoàn cảnh khó khăn và dự án vì cộng đồng. Chúng tôi hướng tới sự tiện lợi, minh bạch và hiệu quả trong từng hoạt động gây quỹ. </p> <br>
@@ -165,23 +157,57 @@
         </div>
           
         <!-- MẠNG XÃ HỘI -->
-        <div class="SocialMedia">
-            <div class="box1">
-              <h1>Kết Nối Mạng Xã Hội & Lời Cảm Ơn</h1>
-              <p>
-                Hãy theo dõi và lan tỏa những chiến dịch đầy yêu thương qua: 
-                <a href="#">🌐 Facebook</a>  
-                <a href="https://www.tiktok.com/@shadow.b369/video/7307194728938867970?is_from_webapp=1&sender_device=pc&web_id=7475957989800265234">TikTok</a> 
-                <a href="#">📺 YouTube</a>
-                <a href="#">📸 Instagram</a>
-                <a href="#">🐦 Twitter</a>
-                <a href="#">📱 Zalo</a>
-                <br><br>
-                ❤️ Cảm ơn bạn đã đồng hành cùng <strong>Hearts United</strong>! Mỗi lượt chia sẻ là một cơ hội thay đổi cuộc đời một ai đó.
-              </p>
+        <div class="bg-dark text-white mt-5 py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo và tên tổ chức -->
+                    <div class="col-md-4">
+                        <h5>Hearts United</h5>
+                        <p>Kết nối yêu thương - Gieo mầm hy vọng</p>
+                    </div>
+
+                    <!-- Liên hệ -->
+                    <div class="col-md-4 fop">
+                        <h5>Liên hệ</h5>
+                        <p>Email: heartsunited@gmail.com</p>
+                        <p>Hotline: 0123 456 789</p>
+                    </div>
+
+                    <!-- Fanpage và mạng xã hội -->
+                    <div class="col-md-4">
+                        <h5>Theo dõi Fanpage</h5>
+                        <p>Hãy kết nối với chúng tôi qua các nền tảng mạng xã hội:</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/nguyenvanbinh.277.267.265" target="_blank" class="text-white me-3">
+                                <i class="bi bi-facebook fs-4"></i>
+                            </a>
+                            <a href="https://instagram.com/yourpage" target="_blank" class="text-white me-3">
+                                <i class="bi bi-instagram fs-4"></i>
+                            </a>
+                            <a href="https://youtube.com/yourpage" target="_blank" class="text-white me-3">
+                                <i class="bi bi-youtube fs-4"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@shadow.b369/video/7307194728938867970?is_from_webapp=1&sender_device=pc&web_id=7475957989800265234" target="_blank" class="text-white">
+                                <i class="bi bi-tiktok fs-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    <script src="/BWD/JavaScript/light.js" defer></script>
+    </div>
+    <script>
+        const item = document.querySelector('.submenu-item');
+        const icon = document.querySelector('#home-icon');
+      
+        item.addEventListener('mouseenter', () => {
+          icon.play();
+        });
+      
+        item.addEventListener('mouseleave', () => {
+          icon.stop();
+        });
+    </script>
     <script src="/BWD/JavaScript/slider.js"></script>
     <script src="/BWD/JavaScript/faq.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
