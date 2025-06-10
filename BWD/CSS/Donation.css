@@ -172,6 +172,34 @@ img#helpingImg {
 .ThongKe {
     width: 25%;
     border-left: 2px solid black;
+    position: fixed;
+    top: 0;
+    right: -400px; /* Ẩn ra ngoài khung nhìn */
+    height: 100vh;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 999;
+}
+/* Khi mở */
+.ThongKe.show {
+    right: 0;
+}
+
+/* Nút toggle */
+.toggle-btn {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #a4c3a2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+    z-index: 1000;
 }
 .pageGrid{
     display: flex;
@@ -272,4 +300,142 @@ img#helpingImg {
 
 .FormDongGop button[type="submit"]:hover {
     background-color: #45a049;
+}
+
+@media (max-width: 1281px) {
+    .container1 {
+        display: flex;
+        width: 100%;
+        height: 135px;
+        flex-direction: column;
+    }
+    .auth-buttons button {
+        border: none;
+        padding: 11px 8px;
+        border-radius: 22px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 10px;
+    }
+    .logo {
+        font-weight: bold;
+        width: 70px;
+    }
+    
+    .search-container {
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+    }
+    
+    .search-container input {
+        border: none;
+        padding: 10px 12px;
+        outline: none;
+        width: 80%;
+    }
+    
+   .search-container button {
+       background-color: transparent;
+       border: none;
+       padding: 0 10px;
+       cursor: pointer;
+    }
+   .submenu {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #5D7B6F;
+        padding: 10px 0;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+    }
+
+    .submenu-item {
+        display: flex;
+        position: relative;
+        align-items: center;
+        gap: 0px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 3px 0px;
+        transition: background-color 0.3s ease;
+        font-size: 11px;
+    }
+    .QuyenGop {
+        width: 100%;
+    }
+    .FormDongGop {
+        color: rgb(0, 0, 0);
+        width: 70%;
+        padding: 20px;
+        line-height: 1.8;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, rgba(0, 90, 84, 0.31), rgba(0, 89, 12, 0.1));
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 255, 204, 0.1);
+        margin: 30px auto;
+        animation: fadeIn 1.2s ease;
+    }
+    .ThongKe {
+        width: 25%;
+        border-left: 2px solid black;
+        position: fixed;
+        top: 0;
+        right: -400px; /* Ẩn ra ngoài khung nhìn */
+        height: 100vh;
+        background-color: #f8f9fa;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        transition: right 0.3s ease;
+        padding: 10px;
+        z-index: 999;
+    }
+    /* Khi mở */
+    .ThongKe.show {
+        right: 0;
+    }
+    
+    /* Nút toggle */
+    .toggle-btn {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #a4c3a2;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 10px 0 0 10px;
+        z-index: 1000;
+    }
+    .pageGrid{
+        display: flex;
+        grid-template-columns: repeat(2,1fr);
+        gap: 7px;
+        flex-direction: column;
+    }
+    .pageItem{
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+        transition: transform 0.3s ease;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 50px;
+        align-items: center;
+        margin: 0px 10%;
+    }
 }
