@@ -8,6 +8,8 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: white;
+    font-size: 16px; 
+    line-height: 1.5;
 }
 
   /* Header Top */
@@ -250,9 +252,153 @@ body {
     display: block;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
+/* Các style chung ở đây, dành cho màn hình lớn */
+.container { display: flex; }
+.header { height: 100px; }
+.navbar { display: flex; justify-content: space-between; }
+/* ... */
+
+/* ================== Tablet (max-width: 1024px) ================== */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .main-content {
+        padding: 10px;
+    }
+      body {
+        font-size: 15px;
+    }
+    .description-text {
+        font-size: 20px;
+    }
+    .search-container input {
+        border: none;
+        padding: 10px 12px;
+        outline: none;
+        width: 80%;
+    }
+    
+   .search-container button {
+       background-color: transparent;
+       border: none;
+       padding: 0 10px;
+       cursor: pointer;
+    }
+    .container2{
+        height: 600px;
+    }
 }
+
+/* ================== Mobile (max-width: 768px) ================== */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        width: 60px;
+    }
+    .auth-buttons button {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .submenu-item {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .hero-text {
+        font-size: 12px;
+    }
+   body {
+        font-size: 14px;
+    }
+    .description-text {
+        font-size: 18px;
+    }
+    .container1 {
+        height: 120px;
+    }
+    .container2 {
+        height: 550px;
+    }
+}
+
+/* ================== Extra small mobile (max-width: 440px) ================== */
+@media (max-width: 440px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        width: 50px;
+    }
+    .auth-buttons button {
+        font-size: 10px;
+        padding: 6px;
+    }
+    
+    .submenu-item {
+        font-size: 8px;
+        padding: 3px;
+    }
+    .hero-text {
+        font-size: 10px;
+    }
+    .container1 {
+        height: 100px;
+    }
+    .container2 {
+        height: 500px;
+    }
+    .box1 h1 {
+        font-size: 18px;
+    }
+    .faq-item {
+        font-size: 12px;
+    }
+    .description-text {
+        margin: 20px 10px;
+        font-size: 11px;
+    }
+    .search-container {
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+    }
+    
+    .search-container input {
+        border: none;
+        padding: 10px 12px;
+        outline: none;
+        width: 80%;
+    }
+    
+   .search-container button {
+       background-color: transparent;
+       border: none;
+       padding: 0 10px;
+       cursor: pointer;
+    }
+}
+
 
 
